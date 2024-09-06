@@ -62,6 +62,7 @@ extension ScrollView {
                                       await action()
                                       done()
                                   }
+                                  try await Task.sleep(nanoseconds: 1000000000)
                               },
                               style: style,
                               config: config,
